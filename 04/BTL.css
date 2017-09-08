@@ -22,6 +22,7 @@ header h2 {
     padding: 0 0 0px 2%;
     font-size: 20px;
     text-align: center;
+    font-weight: 100;
 }
 
 /*-- Navigation --*/
@@ -33,25 +34,48 @@ nav {
     list-style: none;
     background-color: #ffab40;
 }
-
 nav ul.menu li {
     display: inline-block;
     list-style-type:none;
 }
-
 nav ul.menu li a{
     display: block;
     padding: 4px 10px ;
     text-decoration: none;
     color: #333;
 }
-
 nav ul.menu li a:hover {
     background-color: #ffdd71;
 }
-
 nav ul.menu li.active a {
     background-color: #c77c02;
+}
+
+/*-- Main --*/
+
+main {
+    padding: .5rem 2%;
+    background-color: #FFF;
+}
+main blockquote{
+    font-style: italic;
+    margin: .4rem 2%;
+}
+main a {
+    color:#0093c4;
+}
+main a:hover {
+    color:#4fc3f7;
+}
+main ul.location, main ol.check {
+    margin: 0 0 .8rem 0;
+    padding: 0 0 0 1rem;
+}
+main ul.location {
+    list-style-type: square;
+}
+main ul.check {
+    list-style-type: square;
 }
 
 /*--Body--*/
@@ -61,23 +85,32 @@ body {
     color:#333333;
     background-color: white;
 }
-
 h2 {
-    padding: 10px 0 15px 2%;
+    padding: 10px 0 10px 2%;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
-
 dl {
     padding: 0 0 15px 2%;
 }
-
 p {
     padding: 0 0 0 2%;
+    font-size: 16px;
+    font-kerning: 22px;
+    line-height: 20px;
 }
 
 /*-- Footer --*/
+
 footer {
-    background-color: #ffdd71;
+    background-color: #ffab40;
     text-align: center;
+    font-weight: 100;
+    font-size: 16px;
+}
+footer p {
+    font-weight: 100;
+    font-size: 16px;
 }
 /*-- Other --*/
 .keepOpen {
