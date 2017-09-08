@@ -8,39 +8,78 @@ body, p, h1, h2, h3, h4, h5, h6 {
 /* box model fix here */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-/*-- Body --*/
-body {
-    font-family: 'Roboto', sans-serif;
-    color:#333333;
-    background-color: white;
-}
 /*-- Header ---*/
 header {
-    background-color: white
+    background-color: white;
 }
 header h1 {
     color: #333333;
-    padding: 20px 10px 0px 2%;
-    
+    padding: 15px 10px 0px 2%;
+    text-align: center; 
 }
 header h2 {
     color: #333333;
-    padding: 6px 0 15px 2%;
-    font-size: 20px
+    padding: 0 0 0px 2%;
+    font-size: 20px;
+    text-align: center;
 }
 
 /*-- Navigation --*/
 
 nav {
-    background-color: #ffab40;
-    border-top: solid 1px #000;
-    border-bottom: solid 1px #000;
-}
-nav ul.menu {
-    list-style-type: none;
     margin: 0;
     padding: 0;
+    text-align: center;
+    list-style: none;
+    background-color: #ffab40;
 }
+
 nav ul.menu li {
-    float:left;
+    display: inline-block;
+    list-style-type:none;
+}
+
+nav ul.menu li a{
+    display: block;
+    padding: 4px 10px ;
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul.menu li a:hover {
+    background-color: #ffdd71;
+}
+
+nav ul.menu li.active a {
+    background-color: #c77c02;
+}
+
+/*--Body--*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color:#333333;
+    background-color: white;
+}
+
+h2 {
+    padding: 10px 0 15px 2%;
+}
+
+dl {
+    padding: 0 0 15px 2%;
+}
+
+p {
+    padding: 0 0 0 2%;
+}
+
+/*-- Footer --*/
+footer {
+    background-color: #ffdd71;
+    text-align: center;
+}
+/*-- Other --*/
+.keepOpen {
+    clear: both;
 }
