@@ -1,0 +1,46 @@
+/* CSS reset */
+body, p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* box model fix here */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/*-- Body --*/
+body {
+    font-family: 'Roboto', sans-serif;
+    color:#333333;
+    background-color: white;
+}
+/*-- Header ---*/
+header {
+    background-color: white
+}
+header h1 {
+    color: #333333;
+    padding: 20px 10px 0px 2%;
+    
+}
+header h2 {
+    color: #333333;
+    padding: 6px 0 15px 2%;
+    font-size: 20px
+}
+
+/*-- Navigation --*/
+
+nav {
+    background-color: #ffab40;
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+}
+nav ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul.menu li {
+    float:left;
+}
