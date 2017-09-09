@@ -28,8 +28,8 @@ header h2 {
 /*-- Navigation --*/
 
 nav {
-    margin: 0;
-    padding: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
     text-align: center;
     list-style: none;
     background-color: #ffab40;
@@ -40,7 +40,9 @@ nav ul.menu li {
 }
 nav ul.menu li a{
     display: block;
-    padding: 4px 10px ;
+    margin: 0 0 0 0;
+    padding: 15px 15px 15px 15px;
+    padding: 15px 15px 15px 15px;
     text-decoration: none;
     color: #333;
 }
@@ -68,18 +70,19 @@ main a:hover {
     color:#4fc3f7;
 }
 main ul.location, main ol.check {
-    margin: 0 0 .8rem 0;
+    margin: 0 0 .8rem 2%;
     padding: 0 0 0 1rem;
+    line-height: 25px;
 }
 main ul.location {
     list-style-type: square;
 }
-main ul.check {
-    list-style-type: square;
-}
 
 /*--Body--*/
-
+ol.check {
+    line-height: 27px;
+    list-style-type:lower-roman;
+}
 body {
     font-family: 'Roboto', sans-serif;
     color:#333333;
@@ -99,18 +102,33 @@ p {
     font-kerning: 22px;
     line-height: 20px;
 }
-
+p.pPitfall {
+    border-bottom: 3px #ffdd71;
+}
+p.pMoreinfo {
+    background-color: #ffdd71;
+    padding: 10px 0px 10px 10px;
+    font-size: 16px;
+    font-kerning: 22px;
+    line-height: 20px;
+}
+dl {
+    border-bottom: 10px  #ffdd71;
+    line-height: 20px;
+    font-size: 16px;
+}
 /*-- Footer --*/
 
 footer {
     background-color: #ffab40;
     text-align: center;
-    font-weight: 100;
-    font-size: 16px;
+    padding: 10px 0  10px 0;
+    padding: 10px 0  10px 0;
 }
 footer p {
     font-weight: 100;
     font-size: 16px;
+    font-style: normal
 }
 /*-- Other --*/
 .keepOpen {
