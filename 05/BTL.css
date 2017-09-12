@@ -88,6 +88,9 @@ body {
     color:#333333;
     background-color: white;
 }
+h1 {
+    padding: 0 0 0 4%;
+}
 h2 {
     padding: 10px 0 10px 2%;
     font-size: 1.5rem;
