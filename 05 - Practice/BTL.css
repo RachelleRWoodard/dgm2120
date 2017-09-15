@@ -28,14 +28,19 @@ header h2 {
 /*-- Navigation --*/
 
 nav {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    text-align: center;
+    list-style: none;
     background-color: #ffab40;
 }
 nav ul.menu li {
-    float: left;
-    list-style: none;
+    display: inline-block;
+    list-style-type:none;
 }
 nav ul.menu li a{
     display: block;
+    margin: 0 0 0 0;
     padding: 15px 15px 15px 15px;
     padding: 15px 15px 15px 15px;
     text-decoration: none;
@@ -46,6 +51,18 @@ nav ul.menu li a:hover {
 }
 nav ul.menu li.active a {
     background-color: #c77c02;
+}
+
+/*-- Images --*/
+figure.desk {
+    margin: 0 0 0 1em;
+    padding: 0 0 0 0;
+    float: right;
+    border: 1px solid #999;
+    width: 40%;
+}
+figure.desk img {
+    width: 100%;
 }
 
 /*-- Main --*/
@@ -83,6 +100,9 @@ body {
     color:#333333;
     background-color: white;
 }
+h1 {
+    padding: 0 0 0 4%;
+}
 h2 {
     padding: 10px 0 10px 2%;
     font-size: 1.5rem;
@@ -102,7 +122,7 @@ p.pPitfall {
 }
 p.pMoreinfo {
     border-left-style: solid;
-    border-left-color: rgb(255, 171, 64);
+    border-left-color: #c77c02;
     border-left-width: 15px;
     background-color: #ffdd71;
     padding: 15px 15px 15px 20px;
@@ -111,9 +131,6 @@ p.pMoreinfo {
     line-height: 20px;
 }
 dl {
-    border-left-style: solid;
-    border-left-color: #ffdd71;
-    border-left-width: 15px;
     line-height: 20px;
     font-size: 16px;
 }

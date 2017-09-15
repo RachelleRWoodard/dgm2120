@@ -110,7 +110,7 @@ p.pPitfall {
 }
 p.pMoreinfo {
     border-left-style: solid;
-    border-left-color: rgb(255, 171, 64);
+    border-left-color: #c77c02;
     border-left-width: 15px;
     background-color: #ffdd71;
     padding: 15px 15px 15px 20px;
@@ -119,7 +119,6 @@ p.pMoreinfo {
     line-height: 20px;
 }
 dl {
-    border-bottom: 10px  #ffdd71;
     line-height: 20px;
     font-size: 16px;
 }
