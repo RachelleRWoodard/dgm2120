@@ -54,12 +54,9 @@ nav ul.menu li.active a {
 }
 
 /*-- Images --*/
-figure.desk {
-    margin: 0 0 0 1em;
-    padding: 0 0 0 0;
-    float: right;
-    border: 1px solid #999;
-    width: 40%;
+figure.mygallery {
+    float: left;
+}
 }
 figure.desk img {
     width: 100%;

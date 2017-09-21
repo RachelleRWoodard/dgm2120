@@ -25,6 +25,16 @@ header h2 {
     font-weight: 100;
 }
 
+/*-- images --*/
+figure.btlhome {
+    float: center;
+    Margin: 0 0 15px 0;
+}
+
+figure.btlhome img {
+    width: 100%;
+}
+
 /*-- Navigation --*/
 
 nav {
