@@ -29,6 +29,7 @@ header h2 {
 figure.gallery {
     float: left;
     padding: 2px 2px 2px 2px;
+    border: solid 1px #4c6c73;
 }
 figure.btlhome {
     float: right;
