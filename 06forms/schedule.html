@@ -37,18 +37,19 @@
 <!-- Start of Main content-->
         <main>
             <h2>Lecture and Workshop</h2><br>
-            <p>Would you like us to do a lecutre and or workshop at your insitution, well then you are in the right place.</p><br>
+                <p>Would you like us to do a lecutre and or workshop at your insitution, well then you are in the right place.</p><br>
        <form action="FormToEmail.php" mehtod="post" enctype="multipart/form-data" name="attend" class="conference">
-            <fieldset>
+           <fieldset>
                 <ledgend>Personal Info</ledgend>
-                <label><span> Name:</span><input type="text" name="name" placeholder="full name" class="userinfo"></label>
+                
+                <label><span> Name:</span><input type="text" name="name" placeholder="full name required" class="userinfo"></label>
                 
                 <label><span> Adress:</span><input type="text" name="adress" placeholder="adress required" class="userinfo" ></label>
                 
                 <label><span> Email:</span><input type="email" name="email" placeholder="email@email.com" class="userinfo"></label>
                 
                 <label><span> Phone:</span><input type="tel" name="phone" placeholder="123-123-1234" required pattern="[8,9- .]{10,14}" class="userinfo"></label>
-           
+
            </fieldset>
             
             <fieldset>
@@ -62,6 +63,7 @@
                 
                 
                 <label><span> URL for Website:</span><input type="url" name="url_for_site" placeholder="http://Insitutionwebsite.com" class="userinfo"></label>
+        
            </fieldset>
             
             
@@ -69,16 +71,17 @@
             <ledgend>Registeration Information</ledgend>
             <span>What services would you like?</span>
             
-            <label><input type="checkbox"name="os" value="lecture">Lecture</label><br>
-            <label><input type="checkbox"name="os" value="workshop">Workshop</label>
+            <label><input type="checkbox"name="lecture" value="lecture">Lecture</label><br>
+            <label><input type="checkbox"name="workshop" value="workshop">Workshop</label><br>
+            <label><input type="checkbox" name="other" vale="other">Other</label>
             
             <label> <span> Preffered Date:</span><input type="date" name="date" class="userinfo"></label>
             
-            <label><span>Credit Card Type:</span>
-            <select name="creditcard" class="userinfo">
-            <option value="MC"> Mastercard </option> 
-            <option> Visa </option>
-            <option> Discover </option>
+            <label><span>How did you hear about us?</span>
+            <select name="hearabout" class="userinfo">
+            <option value="wordofmouth"> Word of mouth </option> 
+            <option value="website"> Website </option>
+            <option value="add"> Advertisment </option>
                 
             </select>
             </label>
@@ -86,7 +89,6 @@
              <input type="submit" name="submit" value="sign me up" class="userbutton">
            <input type="hidden" name="subject" value="confrence registration">
            <input type="hidden" name="redirect" value="thanks.html"> 
-            
         </form>
         </main>
 <!-- Start of the footer-->
@@ -94,4 +96,5 @@
             <p>&copy; 2017 &bull; BTL &bull; Built by Rachelle Woodard</p>
         </footer>
     </body>
+
 </html>
